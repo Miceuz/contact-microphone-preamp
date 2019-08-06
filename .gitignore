@@ -4,6 +4,7 @@
 *.xml
 # backup files
  *.bak
+*.*bak
 _*.*
 #releases
 *.zip

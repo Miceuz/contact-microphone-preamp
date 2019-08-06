@@ -1,0 +1,505 @@
+EESchema Schematic File Version 5
+LIBS:contact-mic-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM358 U1
+U 1 1 5D4860F9
+P 5150 2800
+F 0 "U1" H 5150 3167 50  0000 C CNN
+F 1 "ADA4084-2" H 5150 3076 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5150 2800 50  0001 C CNN
+F 3 "" H 5150 2800 50  0001 C CNN
+F 4 "ADA4084-2ARZ-R7" H 5150 2800 50  0001 C CNN "PartNo"
+F 5 "Analog Devices" H 5150 2800 50  0001 C CNN "Manufacturer"
+	1    5150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 2 1 5D487062
+P 5225 3950
+F 0 "U1" H 5225 4317 50  0000 C CNN
+F 1 "LM358" H 5225 4226 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5225 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5225 3950 50  0001 C CNN
+	2    5225 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 3 1 5D488F9A
+P 2275 2750
+F 0 "U1" H 2233 2796 50  0000 L CNN
+F 1 "LM358" H 2233 2705 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2275 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2275 2750 50  0001 C CNN
+	3    2275 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D48A82D
+P 4500 2550
+F 0 "R2" H 4570 2596 50  0000 L CNN
+F 1 "400k" H 4570 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 2550 50  0001 C CNN
+F 3 "~" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D48AC56
+P 4500 2850
+F 0 "R3" H 4570 2896 50  0000 L CNN
+F 1 "400k" H 4570 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 2850 50  0001 C CNN
+F 3 "~" H 4500 2850 50  0001 C CNN
+	1    4500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2900 4850 3050
+Wire Wire Line
+	4850 3050 5450 3050
+Wire Wire Line
+	5450 3050 5450 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5D48C36B
+P 5600 2800
+F 0 "#PWR?" H 5600 2550 50  0001 C CNN
+F 1 "GND" H 5605 2627 50  0000 C CNN
+F 2 "" H 5600 2800 50  0001 C CNN
+F 3 "" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR?
+U 1 1 5D48C840
+P 4500 3000
+F 0 "#PWR?" H 4500 2850 50  0001 C CNN
+F 1 "-BATT" H 4515 3173 50  0000 C CNN
+F 2 "" H 4500 3000 50  0001 C CNN
+F 3 "" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 2800 5600 2800
+Connection ~ 5450 2800
+Wire Wire Line
+	4500 2700 4850 2700
+Connection ~ 4500 2700
+$Comp
+L power:+BATT #PWR?
+U 1 1 5D48DC2C
+P 4500 2400
+F 0 "#PWR?" H 4500 2250 50  0001 C CNN
+F 1 "+BATT" H 4515 2573 50  0000 C CNN
+F 2 "" H 4500 2400 50  0001 C CNN
+F 3 "" H 4500 2400 50  0001 C CNN
+	1    4500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR?
+U 1 1 5D48E197
+P 1725 3050
+F 0 "#PWR?" H 1725 2900 50  0001 C CNN
+F 1 "-BATT" H 1740 3223 50  0000 C CNN
+F 2 "" H 1725 3050 50  0001 C CNN
+F 3 "" H 1725 3050 50  0001 C CNN
+	1    1725 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5D48E198
+P 1725 2450
+F 0 "#PWR?" H 1725 2300 50  0001 C CNN
+F 1 "+BATT" H 1740 2623 50  0000 C CNN
+F 2 "" H 1725 2450 50  0001 C CNN
+F 3 "" H 1725 2450 50  0001 C CNN
+	1    1725 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5D48E9FF
+P 1725 2675
+F 0 "C1" H 1607 2721 50  0000 R CNN
+F 1 "100u" H 1607 2630 50  0000 R CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 1763 2525 50  0001 C CNN
+F 3 "~" H 1725 2675 50  0001 C CNN
+F 4 "EEE-HC1C101XP" H 1725 2675 50  0001 C CNN "PartNo"
+F 5 "Panasonic" H 1725 2675 50  0001 C CNN "Manufacturer"
+	1    1725 2675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D4900AC
+P 2625 2750
+F 0 "C2" H 2511 2704 50  0000 R CNN
+F 1 "1u" H 2511 2795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2663 2600 50  0001 C CNN
+F 3 "~" H 2625 2750 50  0001 C CNN
+	1    2625 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2625 2600 2625 2450
+Wire Wire Line
+	2625 2450 2375 2450
+Wire Wire Line
+	2625 2900 2625 3050
+Wire Wire Line
+	2625 3050 2375 3050
+Wire Wire Line
+	2375 2450 1725 2450
+Connection ~ 2375 2450
+Wire Wire Line
+	2375 3050 1725 3050
+Connection ~ 2375 3050
+Wire Wire Line
+	1725 2825 1725 3050
+Wire Wire Line
+	1725 2525 1725 2450
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D49CAB7
+P 4150 3850
+F 0 "J2" H 4068 4067 50  0000 C CNN
+F 1 "Piezo" H 4068 3976 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4150 3850 50  0001 C CNN
+F 3 "~" H 4150 3850 50  0001 C CNN
+F 4 "CUI Inc" H 4150 3850 50  0001 C CNN "Manufacturer"
+F 5 "CEB-44D06" H 4150 3850 50  0001 C CNN "PartNo"
+	1    4150 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D49D673
+P 4475 4150
+F 0 "#PWR?" H 4475 3900 50  0001 C CNN
+F 1 "GND" H 4480 3977 50  0000 C CNN
+F 2 "" H 4475 4150 50  0001 C CNN
+F 3 "" H 4475 4150 50  0001 C CNN
+	1    4475 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D49E2CF
+P 4475 4000
+F 0 "R1" H 4545 4046 50  0000 L CNN
+F 1 "400k" H 4545 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4405 4000 50  0001 C CNN
+F 3 "~" H 4475 4000 50  0001 C CNN
+	1    4475 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3850 4475 3850
+Wire Wire Line
+	4350 3950 4350 4150
+Wire Wire Line
+	4350 4150 4475 4150
+Wire Wire Line
+	4475 3850 4925 3850
+Connection ~ 4475 3850
+$Comp
+L Device:R R5
+U 1 1 5D49F687
+P 5075 4400
+F 0 "R5" V 5282 4400 50  0000 C CNN
+F 1 "400k" V 5191 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5005 4400 50  0001 C CNN
+F 3 "~" H 5075 4400 50  0001 C CNN
+	1    5075 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5D4A033F
+P 5075 4750
+F 0 "C4" V 4823 4750 50  0000 C CNN
+F 1 "C" V 4914 4750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5113 4600 50  0001 C CNN
+F 3 "~" H 5075 4750 50  0001 C CNN
+	1    5075 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 4050 4925 4400
+Connection ~ 4925 4400
+Wire Wire Line
+	4925 4400 4925 4750
+Wire Wire Line
+	5225 4750 5525 4750
+Wire Wire Line
+	5525 4750 5525 4400
+Wire Wire Line
+	5225 4400 5525 4400
+Connection ~ 5525 4400
+Wire Wire Line
+	5525 4400 5525 3950
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5D4A0E77
+P 6275 4050
+F 0 "J3" H 6275 4150 50  0000 C CNN
+F 1 "Out" H 6425 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6275 4050 50  0001 C CNN
+F 3 "~" H 6275 4050 50  0001 C CNN
+	1    6275 4050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5525 3950 5775 3950
+Connection ~ 5525 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5D4A1C0A
+P 6075 4050
+F 0 "#PWR?" H 6075 3800 50  0001 C CNN
+F 1 "GND" H 6080 3877 50  0000 C CNN
+F 2 "" H 6075 4050 50  0001 C CNN
+F 3 "" H 6075 4050 50  0001 C CNN
+	1    6075 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5D4A2984
+P 4925 5025
+F 0 "RV1" H 4855 5071 50  0000 R CNN
+F 1 "360k" H 4855 4980 50  0000 R CNN
+F 2 "miceuz-lib:Trimpot_3.8mmx3.6mm_TC33X-2-103E" H 4925 5025 50  0001 C CNN
+F 3 "~" H 4925 5025 50  0001 C CNN
+F 4 "TC33X-2-304E" H 4925 5025 50  0001 C CNN "PartNo"
+F 5 "Bourns" H 4925 5025 50  0001 C CNN "Manufacturer"
+	1    4925 5025
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 4875 4925 4750
+Connection ~ 4925 4750
+Wire Wire Line
+	4775 5025 4775 4750
+Wire Wire Line
+	4775 4750 4925 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5D4A40C4
+P 4925 5475
+F 0 "#PWR?" H 4925 5225 50  0001 C CNN
+F 1 "GND" H 4930 5302 50  0000 C CNN
+F 2 "" H 4925 5475 50  0001 C CNN
+F 3 "" H 4925 5475 50  0001 C CNN
+	1    4925 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D4A53C2
+P 4925 5325
+F 0 "R4" V 5132 5325 50  0000 C CNN
+F 1 "40k" V 5041 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4855 5325 50  0001 C CNN
+F 3 "~" H 4925 5325 50  0001 C CNN
+	1    4925 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5D4A816F
+P 5925 3950
+F 0 "C5" H 6043 3996 50  0000 L CNN
+F 1 "100u" H 6043 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 5963 3800 50  0001 C CNN
+F 3 "~" H 5925 3950 50  0001 C CNN
+F 4 "EEE-HC1C101XP" H 5925 3950 50  0001 C CNN "PartNo"
+F 5 "Panasonic" H 5925 3950 50  0001 C CNN "Manufacturer"
+	1    5925 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5D4A9D3F
+P 575 2650
+F 0 "J1" H 493 2867 50  0000 C CNN
+F 1 "12V A23" H 650 2775 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 575 2650 50  0001 C CNN
+F 3 "~" H 575 2650 50  0001 C CNN
+F 4 "A23 12V battery" H 575 2650 50  0001 C CNN "Comment"
+	1    575  2650
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1725 2450
+Wire Wire Line
+	775  2750 775  3050
+Wire Wire Line
+	1200 3050 1725 3050
+Connection ~ 1725 3050
+Wire Wire Line
+	4500 2700 4250 2700
+Wire Wire Line
+	4250 3000 4500 3000
+Connection ~ 4500 3000
+$Comp
+L Device:C C3
+U 1 1 5D4AE249
+P 4250 2850
+F 0 "C3" H 4075 2850 50  0000 C CNN
+F 1 "1u" H 4175 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4288 2700 50  0001 C CNN
+F 3 "~" H 4250 2850 50  0001 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5D4AFF5A
+P 5925 3675
+F 0 "JP1" H 5925 3860 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5925 3769 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5925 3675 50  0001 C CNN
+F 3 "~" H 5925 3675 50  0001 C CNN
+	1    5925 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 3675 6075 3675
+Wire Wire Line
+	6075 3675 6075 3800
+Connection ~ 6075 3950
+Wire Wire Line
+	5825 3675 5775 3675
+Wire Wire Line
+	5775 3675 5775 3950
+Connection ~ 5775 3950
+$Comp
+L Device:LED D1
+U 1 1 5D4D8F88
+P 3000 2900
+F 0 "D1" V 3039 2783 50  0000 R CNN
+F 1 "LED" V 2948 2783 50  0000 R CNN
+F 2 "miceuz-lib:LED_0603_SLP3-150-150-F" H 3000 2900 50  0001 C CNN
+F 3 "~" H 3000 2900 50  0001 C CNN
+	1    3000 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2625 3050 3000 3050
+Connection ~ 2625 3050
+$Comp
+L Device:R R6
+U 1 1 5D4DA00A
+P 3000 2600
+F 0 "R6" H 3070 2646 50  0000 L CNN
+F 1 "1k" H 3070 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 2600 50  0001 C CNN
+F 3 "~" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 2450 3000 2450
+Connection ~ 2625 2450
+Wire Wire Line
+	6075 3800 6600 3800
+Wire Wire Line
+	6600 3800 6600 3950
+Connection ~ 6075 3800
+Wire Wire Line
+	6075 3800 6075 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5D4DC3C6
+P 6825 4150
+F 0 "#PWR?" H 6825 3900 50  0001 C CNN
+F 1 "GND" H 6830 3977 50  0000 C CNN
+F 2 "" H 6825 4150 50  0001 C CNN
+F 3 "" H 6825 4150 50  0001 C CNN
+	1    6825 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SJ-3523-SMT-TR:SJ-3523-SMT-TR J4
+U 1 1 5D4DCDCC
+P 7125 4050
+F 0 "J4" H 6895 4004 50  0000 R CNN
+F 1 "SJ-3523-SMT-TR" H 6895 4095 50  0000 R CNN
+F 2 "miceuz-lib:CUI_SJ-3523-SMT-TR" H 7125 4050 50  0001 L BNN
+F 3 "CUI Inc" H 7125 4050 50  0001 L BNN
+F 4 "SJ-3523-SMT-TR" H 7125 4050 50  0001 C CNN "PartNo"
+F 5 "CUI Inc" H 7125 4050 50  0001 C CNN "Manufacturer"
+	1    7125 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6825 3950 6600 3950
+Wire Wire Line
+	6825 4050 6825 4150
+Connection ~ 6825 4150
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5D4E6F81
+P 1400 2350
+F 0 "SW1" H 1400 2635 50  0000 C CNN
+F 1 "SW_SPDT" H 1400 2544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1400 2350 50  0001 C CNN
+F 3 "~" H 1400 2350 50  0001 C CNN
+F 4 "PCM12SMTR" H 1400 2350 50  0001 C CNN "PartNo"
+F 5 "C&K Switches" H 1400 2350 50  0001 C CNN "Manufacturer"
+	1    1400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	775  2350 775  2650
+Wire Wire Line
+	1600 2450 1725 2450
+$Comp
+L Device:Battery BT?
+U 1 1 5D5099E6
+P 1200 2725
+F 0 "BT?" H 1308 2771 50  0000 L CNN
+F 1 "Battery" H 1308 2680 50  0000 L CNN
+F 2 "miceuz-lib:A23_BATT" V 1200 2785 50  0001 C CNN
+F 3 "~" V 1200 2785 50  0001 C CNN
+F 4 "55" H 1200 2725 50  0001 C CNN "PartNo"
+F 5 "Keystone" H 1200 2725 50  0001 C CNN "Manufacturer"
+	1    1200 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2525 1200 2350
+Wire Wire Line
+	1200 2925 1200 3050
+Wire Wire Line
+	775  2350 1200 2350
+Connection ~ 1200 2350
+Wire Wire Line
+	775  3050 1200 3050
+Connection ~ 1200 3050
+Connection ~ 4475 4150
+Text Notes 2725 3225 0    50   ~ 0
+Lightpipe: SLP3-150-150-F Bivar
+$EndSCHEMATC
